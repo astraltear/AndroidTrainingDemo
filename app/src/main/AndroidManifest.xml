@@ -10,6 +10,19 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/main_activity_name" >
+        </activity>
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="jee.young.androidtrainingdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StartupActivity"
+            android:label="@string/title_activity_startup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,13 +30,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:theme="@style/Theme.AppCompat.Light"
-            android:name=".DisplayMessageActivity"
-            android:label="@string/title_activity_display_message"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="jee.young.androidtrainingdemo.MainActivity" />
+            android:name=".ActivityA"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_" >
         </activity>
     </application>
 

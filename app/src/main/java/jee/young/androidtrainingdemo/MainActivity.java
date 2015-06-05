@@ -1,6 +1,7 @@
 package jee.young.androidtrainingdemo;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,9 +19,12 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        // if your minSdkVersion is 11 or higher,instead use:
-        // getActionBar().setDisplayShowHomeEnabled(true);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB){
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        } else {
+            getActionBar().setDisplayShowHomeEnabled(true);
+        }
+
     }
 
     public void sendMessage(View view) {
