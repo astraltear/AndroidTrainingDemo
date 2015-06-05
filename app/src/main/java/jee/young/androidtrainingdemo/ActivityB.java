@@ -12,7 +12,7 @@ import jee.young.androidtrainingdemo.util.StatusTracker;
 import jee.young.androidtrainingdemo.util.Utils;
 
 
-public class ActivityA extends ActionBarActivity {
+public class ActivityB extends ActionBarActivity {
 
     String mActivityName;
     private TextView mStatusView;
@@ -22,23 +22,19 @@ public class ActivityA extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a);
-
-        mActivityName = getString(R.string.activity_a);
-        mStatusView = (TextView) findViewById(R.id.status_view_a);
-        mStatusAllView = (TextView) findViewById(R.id.status_view_all_a);
-
-
-        mStatusTracker.setStatus(mActivityName,getString(R.string.on_create));
-
-        Utils.printStatus(mStatusView,mStatusAllView);
+        setContentView(R.layout.activity_activity_b);
+        mActivityName = getString(R.string.activity_b_label);
+        mStatusView = (TextView)findViewById(R.id.status_view_b);
+        mStatusAllView = (TextView)findViewById(R.id.status_view_all_b);
+        mStatusTracker.setStatus(mActivityName, getString(R.string.on_create));
+        Utils.printStatus(mStatusView, mStatusAllView);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_start));
-        Utils.printStatus(mStatusView,mStatusAllView);
+        Utils.printStatus(mStatusView, mStatusAllView);
     }
 
     @Override
@@ -66,33 +62,32 @@ public class ActivityA extends ActionBarActivity {
     protected void onStop() {
         super.onStop();
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_stop));
-        Utils.printStatus(mStatusView, mStatusAllView);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_destroy));
-        Utils.printStatus(mStatusView, mStatusAllView);
-        mStatusTracker.clear();
     }
 
     public void startDialog(View v) {
-        Intent intent = new Intent(this, DialogActivity.class);
+        Intent intent = new Intent(ActivityB.this, DialogActivity.class);
         startActivity(intent);
     }
 
-    public void startActivityB(View v) {
-        Intent intent = new Intent(this, ActivityB.class);
+    public void startActivityA(View v) {
+        Intent intent = new Intent(ActivityB.this, ActivityA.class);
         startActivity(intent);
     }
 
     public void startActivityC(View v) {
-        Intent intent = new Intent(this, ActivityC.class);
+        Intent intent = new Intent(ActivityB.this, ActivityC.class);
         startActivity(intent);
     }
 
-    public void finishActivityA(View v){
-        this.finish();
+    public void finishActivityB(View v) {
+        ActivityB.this.finish();
     }
+
+
 }

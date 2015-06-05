@@ -55,4 +55,7 @@
 
     <string name="close">Close</string>
     <string name="dialog">Dialog</string>
+    <string name="title_activity_activity_b">ActivityB</string>
+    <string name="title_activity_activity_c">ActivityC</string>
+    <string name="title_activity_dialog">DialogActivity</string>
 </resources>
