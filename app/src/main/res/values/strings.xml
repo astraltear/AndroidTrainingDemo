@@ -11,9 +11,9 @@
 
     <string name="call_child_intent">call child</string>
     <string name="activity_lifecycle">activity lifecycle</string>
+    <string name="create_fragment_text">Create Fragment</string>
+
     <string name="title_activity_">ActivityA</string>
-
-
 
     <string name="lifecycle_method_list">Lifecycle Method List</string>
     <string name="activity_status">Activity Status</string>
@@ -58,4 +58,5 @@
     <string name="title_activity_activity_b">ActivityB</string>
     <string name="title_activity_activity_c">ActivityC</string>
     <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_create_fragment">CreateFragmentActivity</string>
 </resources>

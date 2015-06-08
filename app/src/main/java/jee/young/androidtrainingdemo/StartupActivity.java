@@ -26,4 +26,11 @@ public class StartupActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void go_createfragment(View view) {
+        Intent intent = new Intent(this, CreateFragmentActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }

@@ -34,6 +34,12 @@
                     android:text="@string/activity_lifecycle"
                     android:id="@+id/btn_lifecycle"
                     android:onClick="go_lifecycle"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_fragment_text"
+                    android:id="@+id/btn_createfragment"
+                    android:onClick="go_createfragment"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>
