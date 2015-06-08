@@ -26,10 +26,10 @@ public class CreateFragmentActivity extends FragmentActivity implements Headline
 
     @Override
     public void onArticleSelected(int position) {
-        ArticleFragment articleFag = (ArticleFragment) getSupportFragmentManager().findFragmentById(R.id.article_fragment);
+        ArticleFragment articleFrag = (ArticleFragment) getSupportFragmentManager().findFragmentById(R.id.article_fragment);
 
-        if(articleFag != null) {
-            articleFag.updateArticleView(position);
+        if(articleFrag != null) {
+            articleFrag.updateArticleView(position);
 
         } else {
             ArticleFragment newFragment = new ArticleFragment();
