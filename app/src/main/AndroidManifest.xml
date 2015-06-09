@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="jee.young.androidtrainingdemo" >
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/girl_5"
@@ -50,6 +55,14 @@
         <activity
             android:name=".CreateFragmentActivity"
             android:label="@string/title_activity_create_fragment" >
+        </activity>
+        <activity
+            android:name=".CapturePhotoActivity"
+            android:label="@string/title_activity_capture_photo" >
+        </activity>
+        <activity
+            android:name=".GetGalleryImageActivity"
+            android:label="@string/title_activity_get_gallery_image" >
         </activity>
     </application>
 

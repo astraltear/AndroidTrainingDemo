@@ -12,6 +12,12 @@
     <string name="call_child_intent">call child</string>
     <string name="activity_lifecycle">activity lifecycle</string>
     <string name="create_fragment_text">Create Fragment</string>
+    <string name="capture_photo_str">Capture Photo</string>
+    <string name="get_gallery_image">Get Gallery Images</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSample</string>
+
+
 
     <string name="title_activity_">ActivityA</string>
 
@@ -59,4 +65,6 @@
     <string name="title_activity_activity_c">ActivityC</string>
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_create_fragment">CreateFragmentActivity</string>
+    <string name="title_activity_capture_photo">CapturePhotoActivity</string>
+    <string name="title_activity_get_gallery_image">GetGalleryImageActivity</string>
 </resources>

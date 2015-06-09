@@ -40,6 +40,18 @@
                     android:text="@string/create_fragment_text"
                     android:id="@+id/btn_createfragment"
                     android:onClick="go_createfragment"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/capture_photo_str"
+                    android:id="@+id/btn_capture_photo"
+                    android:onClick="go_capturephoto"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_gallery_image"
+                    android:id="@+id/btn_get_gallery_img"
+                    android:onClick="go_getgelleryimage"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>

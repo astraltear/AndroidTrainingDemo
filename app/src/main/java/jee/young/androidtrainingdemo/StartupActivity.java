@@ -31,6 +31,14 @@ public class StartupActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void go_capturephoto(View view) {
+        Intent intent = new Intent(this, CapturePhotoActivity.class);
+        startActivity(intent);
+    }
 
+    public void go_getgelleryimage(View view) {
+        Intent intent = new Intent(this, GetGalleryImageActivity.class);
+        startActivity(intent);
+    }
 
 }
