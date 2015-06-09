@@ -31,13 +31,10 @@ public class GetGalleryImageActivity extends ActionBarActivity {
 
         Bitmap bitmap = null;
         try {
+
             bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), intent.getData());
-
-            BitmapFactory.Options options = new BitmapFactory.Options();
-            options.inSampleSize = 4;
-            Bitmap resized = Bitmap.createScaledBitmap(bitmap, 200, 400, true);
-            imageView.setImageBitmap(resized);
-
+            bitmap = Bitmap.createScaledBitmap(bitmap, 200, 400, true);
+            imageView.setImageBitmap(bitmap);
 
            /* BitmapFactory.Options options = new BitmapFactory.Options();
             options.inSampleSize = 4;
