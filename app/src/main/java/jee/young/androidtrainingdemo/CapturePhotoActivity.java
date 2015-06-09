@@ -213,7 +213,6 @@ public class CapturePhotoActivity extends ActionBarActivity {
     }
 
     private void handleSmallCameraPhoto(Intent intent) {
-//        Bundle extras = intent.getExtras();
 
 //        Uri currImageURI = intent.getData();
 //        Log.d(this.getClass().getSimpleName(), "[" + currImageURI.toString() + "]");
@@ -225,17 +224,17 @@ public class CapturePhotoActivity extends ActionBarActivity {
         Bitmap bitmap = null;
         try {
             bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), intent.getData());
+            bitmap = Bitmap.createScaledBitmap(bitmap, 200, 400, true);
             mImageView.setImageBitmap(bitmap);
         } catch (IOException e) {
             Log.d(this.getClass().getSimpleName(), "errorMessage:["+e.getMessage()+"]");
             e.printStackTrace();
         }
-//        Bitmap bitmap = BitmapFactory.decodeFile(currImageURI.getPath());
 
 
 
-        mImageView.setVisibility(View.VISIBLE);
-        mVideoView.setVisibility(View.INVISIBLE);
+//        mImageView.setVisibility(View.VISIBLE);
+//        mVideoView.setVisibility(View.INVISIBLE);
         /*mImageBitmap = (Bitmap) extras.get("data");
         mImageView.setImageBitmap(mImageBitmap);
         mVideoUri = null;
