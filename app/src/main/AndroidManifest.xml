@@ -70,6 +70,18 @@
             android:name=".PrintPhotoActivity"
             android:label="@string/title_activity_print_photo" >
         </activity>
+        <activity
+            android:name=".AnimationMainActivity"
+            android:label="@string/title_activity_animation_main" >
+        </activity>
+        <activity
+            android:name=".CrossfadeActivity"
+            android:label="@string/title_activity_crossfade" >
+        </activity>
+        <activity
+            android:name=".CardFlipActivity"
+            android:label="@string/title_activity_card_flip" >
+        </activity>
     </application>
 
 </manifest>

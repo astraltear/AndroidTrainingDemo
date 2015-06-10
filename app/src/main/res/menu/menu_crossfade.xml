@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="jee.young.androidtrainingdemo.CrossfadeActivity">
+
+    <item android:id="@+id/action_toggle" android:title="toggle"
+        app:showAsAction="ifRoom|withText" />
+</menu>

@@ -45,4 +45,9 @@ public class StartupActivity extends ActionBarActivity {
         Intent intent = new Intent(this, PrintPhotoActivity.class);
         startActivity(intent);
     }
+
+    public void go_Animation(View view) {
+        Intent intent = new Intent(this, AnimationMainActivity.class);
+        startActivity(intent);
+    }
 }

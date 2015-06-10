@@ -58,8 +58,13 @@
                     android:text="@string/print_photo"
                     android:id="@+id/btn_print_photo"
                     android:onClick="go_printPhoto"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/animation"
+                    android:id="@+id/btn_animation"
+                    android:onClick="go_Animation"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>

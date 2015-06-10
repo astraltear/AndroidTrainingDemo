@@ -6,4 +6,6 @@
     <dimen name="font_large">44dp</dimen>
     <dimen name="font_medium">24dp</dimen>
     <dimen name="font_small">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
 </resources>
