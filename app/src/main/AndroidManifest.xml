@@ -82,6 +82,10 @@
             android:name=".CardFlipActivity"
             android:label="@string/title_activity_card_flip" >
         </activity>
+        <activity
+            android:name=".LayoutChangeActivity"
+            android:label="@string/title_activity_layout_change" >
+        </activity>
     </application>
 
 </manifest>

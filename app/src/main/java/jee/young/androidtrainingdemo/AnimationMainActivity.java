@@ -40,7 +40,8 @@ public class AnimationMainActivity extends ListActivity {
         mSamples = new Sample[]{
                 new Sample(R.string.title_crossfade,CrossfadeActivity.class),
                 new Sample(R.string.title_card_flip,CardFlipActivity.class),
-                
+                new Sample(R.string.title_layout_changes,LayoutChangeActivity.class),
+
         };
 
 

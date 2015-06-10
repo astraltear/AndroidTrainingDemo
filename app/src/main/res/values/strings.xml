@@ -29,6 +29,7 @@
     <string name="description_image_1">Image 1</string>
     <string name="description_image_2">Image 2</string>
     <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
+    <string name="message_empty_layout_changes">Add an item above to get started.</string>
 
     <string name="card_back_title">Angry Red Android</string>
     <string name="card_back_description"><![CDATA[Lorem ipsum dolor sit]]></string>
@@ -97,4 +98,5 @@
     <string name="title_activity_animation_main">AnimationMainActivity</string>
     <string name="title_activity_crossfade">CrossfadeActivity</string>
     <string name="title_activity_card_flip">CardFlipActivity</string>
+    <string name="title_activity_layout_change">LayoutChangeActivity</string>
 </resources>
