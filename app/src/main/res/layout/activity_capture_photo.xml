@@ -30,8 +30,8 @@
     </LinearLayout>
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="361dp"
-        android:layout_height="361dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:visibility="visible"/>
     <VideoView
         android:id="@+id/videoView1"

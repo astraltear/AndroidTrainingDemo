@@ -210,15 +210,16 @@ public class CapturePhotoActivity extends ActionBarActivity {
     }
 
     private void handleCameraVideo(Intent data) {
+        mVideoUri = data.getData();
+        mVideoView.setVideoURI(mVideoUri);
+        mImageBitmap = null;
+
+        mVideoView.setVisibility(View.VISIBLE);
+        mImageView.setVisibility(View.INVISIBLE);
     }
 
     private void handleSmallCameraPhoto(Intent intent) {
-
-//        Uri currImageURI = intent.getData();
-//        Log.d(this.getClass().getSimpleName(), "[" + currImageURI.toString() + "]");
 //        06-09 17:41:45.118: D/CapturePhotoActivity(28019): [>>>>>>>>content://media/external/images/media/23645]
-
-
         Log.d(this.getClass().getSimpleName(), "[>>>>>>>>" + intent.getData() + "]");
 
         Bitmap bitmap = null;
@@ -231,25 +232,56 @@ public class CapturePhotoActivity extends ActionBarActivity {
             e.printStackTrace();
         }
 
-
-
-//        mImageView.setVisibility(View.VISIBLE);
-//        mVideoView.setVisibility(View.INVISIBLE);
-        /*mImageBitmap = (Bitmap) extras.get("data");
-        mImageView.setImageBitmap(mImageBitmap);
         mVideoUri = null;
-
-
-*/
+        mImageView.setVisibility(View.VISIBLE);
+        mVideoView.setVisibility(View.INVISIBLE);
     }
 
     private void handleBigCameraPhoto() {
         if(mCurrentPhotoPath != null){
-//            setPic();
-//            galleryAddPic();
+            setPic();
+            galleryAddPic();
             mCurrentPhotoPath = null;
         }
     }
+
+    private void galleryAddPic() {
+        Intent mediaScanIntent = new Intent("android.intent.action.MEDIA_SCANNER_SCAN_FILE");
+        File f = new File(mCurrentPhotoPath);
+        Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        this.sendBroadcast(mediaScanIntent);
+    }
+
+    private void setPic() {
+        int targetW = mImageView.getWidth();
+        int targetH = mImageView.getHeight();
+
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(mCurrentPhotoPath, options);
+
+        int photoW = options.outWidth;
+        int photoH = options.outHeight;
+
+        int scaleFactor = 1;
+        if((targetW > 0 )||(targetH > 0)) {
+            scaleFactor = Math.min(photoW / targetW, photoH / targetH);
+        }
+
+        options.inJustDecodeBounds = false;
+        options.inSampleSize = scaleFactor;
+        options.inPurgeable = true;
+
+        Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, options);
+
+        mImageView.setImageBitmap(bitmap);
+        mVideoUri= null;
+        mImageView.setVisibility(View.VISIBLE);
+        mVideoView.setVisibility(View.INVISIBLE);
+
+    }
+
 
     private static final String BITMAP_STORAGE_KEY = "viewbitmap";
     private static final String IMAGEVIEW_VISIBILITY_STORAGE_KEY = "imageviewvisibility";
