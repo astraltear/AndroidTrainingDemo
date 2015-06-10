@@ -16,6 +16,7 @@
     <string name="get_gallery_image">Get Gallery Images</string>
     <string name="cannot">Cannot</string>
     <string name="album_name">CameraSample</string>
+    <string name="print_photo">Print Photo</string>
 
 
 
@@ -67,4 +68,5 @@
     <string name="title_activity_create_fragment">CreateFragmentActivity</string>
     <string name="title_activity_capture_photo">CapturePhotoActivity</string>
     <string name="title_activity_get_gallery_image">GetGalleryImageActivity</string>
+    <string name="title_activity_print_photo">PrintPhotoActivity</string>
 </resources>

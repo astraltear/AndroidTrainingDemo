@@ -52,6 +52,12 @@
                     android:text="@string/get_gallery_image"
                     android:id="@+id/btn_get_gallery_img"
                     android:onClick="go_getgelleryimage"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/print_photo"
+                    android:id="@+id/btn_print_photo"
+                    android:onClick="go_printPhoto"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>
