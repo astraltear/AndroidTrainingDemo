@@ -64,6 +64,12 @@
                     android:text="@string/animation"
                     android:id="@+id/btn_animation"
                     android:onClick="go_Animation"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/networkDemo"
+                    android:id="@+id/btn_networkdemo"
+                    android:onClick="go_NetworkDemo"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>

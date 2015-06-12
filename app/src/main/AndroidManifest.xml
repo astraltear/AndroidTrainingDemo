@@ -8,6 +8,8 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -85,6 +87,14 @@
         <activity
             android:name=".LayoutChangeActivity"
             android:label="@string/title_activity_layout_change" >
+        </activity>
+        <activity
+            android:name=".NetworkDemoActivity"
+            android:label="@string/title_activity_network_demo" >
+        </activity>
+        <activity
+            android:name=".NetworkSettingsActivity"
+            android:label="@string/title_activity_network_settings" >
         </activity>
     </application>
 

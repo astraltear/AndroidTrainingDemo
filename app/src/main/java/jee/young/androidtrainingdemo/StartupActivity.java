@@ -50,4 +50,10 @@ public class StartupActivity extends ActionBarActivity {
         Intent intent = new Intent(this, AnimationMainActivity.class);
         startActivity(intent);
     }
+
+
+    public void go_NetworkDemo(View view) {
+        Intent intent = new Intent(this, NetworkDemoActivity.class);
+        startActivity(intent);
+    }
 }

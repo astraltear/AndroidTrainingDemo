@@ -99,4 +99,15 @@
     <string name="title_activity_crossfade">CrossfadeActivity</string>
     <string name="title_activity_card_flip">CardFlipActivity</string>
     <string name="title_activity_layout_change">LayoutChangeActivity</string>
+    <string name="networkDemo">NetWorkDemo</string>
+    <string name="title_activity_network_demo">NetworkDemoActivity</string>
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="refresh">refresh</string>
+    <string name="title_activity_network_settings">NetworkSettingsActivity</string>
+    <string name="xml_error">Error parsing XML.</string>
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="updated">Last updated:</string>
+    <string name="wifi_connected">Wi-Fi reconnected.</string>
+    <string name="lost_connection">Lost connection.</string>
+
 </resources>
