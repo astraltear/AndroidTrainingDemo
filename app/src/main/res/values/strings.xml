@@ -109,5 +109,11 @@
     <string name="updated">Last updated:</string>
     <string name="wifi_connected">Wi-Fi reconnected.</string>
     <string name="lost_connection">Lost connection.</string>
+    <string name="effectiveNav">EffectiveNavigation</string>
+    <string name="title_activity_effective_navi">EffectiveNaviActivity</string>
 
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="title_activity_collection_demo">CollectionDemoActivity</string>
 </resources>

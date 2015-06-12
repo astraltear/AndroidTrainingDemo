@@ -56,4 +56,5 @@ public class StartupActivity extends ActionBarActivity {
         Intent intent = new Intent(this, NetworkDemoActivity.class);
         startActivity(intent);
     }
+
 }
