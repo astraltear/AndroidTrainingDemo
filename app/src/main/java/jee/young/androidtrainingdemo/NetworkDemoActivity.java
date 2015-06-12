@@ -37,7 +37,7 @@ public class NetworkDemoActivity extends ActionBarActivity {
     public static String sPref = null;
     public static boolean refreshDisplay = true;
 
-    private NetWorkReceiver receiver = new NetWorkReceiver();
+    private NetWorkReceiver receiver ;
     private static boolean wifiConnected = false;
     private static boolean mobileConnected = false;
 
