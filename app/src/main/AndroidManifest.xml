@@ -102,9 +102,14 @@
         </activity>
 
         <provider
-            android:authorities="jee.young.androidtrainingdemo"
             android:name=".content.AssetProvider"
-            android:grantUriPermissions="true"/>
+            android:authorities="jee.young.androidtrainingdemo"
+            android:grantUriPermissions="true" />
+
+        <activity
+            android:name=".ActionBarListPopUPActivity"
+            android:label="@string/title_activity_action_bar_list_pop_up" >
+        </activity>
     </application>
 
 </manifest>

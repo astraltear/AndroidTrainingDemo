@@ -76,6 +76,12 @@
                     android:text="@string/shareAction"
                     android:id="@+id/btn_shareAction"
                     android:onClick="go_ShareAction"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/actionBarPopup"
+                    android:id="@+id/btn_actionBarPopup"
+                    android:onClick="go_ActionBarPopup"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>

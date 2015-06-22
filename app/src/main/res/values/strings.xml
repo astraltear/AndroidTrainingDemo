@@ -120,4 +120,8 @@
     <string name="title_activity_share_action">ShareActionActivity</string>
     <string name="intro_message">share action provider</string>
     <string name="share_text">이 텍스트는 쉐어 된다</string>
+    <string name="actionBarPopup">ActionBarListPopUp</string>
+    <string name="title_activity_action_bar_list_pop_up">ActionBarListPopUPActivity</string>
+    <string name="menu_remove">remove</string>
+    <string name="content_open_popup">content open popup</string>
 </resources>
