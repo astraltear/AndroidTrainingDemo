@@ -96,6 +96,15 @@
             android:name=".NetworkSettingsActivity"
             android:label="@string/title_activity_network_settings" >
         </activity>
+        <activity
+            android:name=".ShareActionActivity"
+            android:label="@string/title_activity_share_action" >
+        </activity>
+
+        <provider
+            android:authorities="jee.young.androidtrainingdemo"
+            android:name=".content.AssetProvider"
+            android:grantUriPermissions="true"/>
     </application>
 
 </manifest>

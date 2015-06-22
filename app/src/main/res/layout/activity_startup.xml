@@ -70,6 +70,12 @@
                     android:text="@string/networkDemo"
                     android:id="@+id/btn_networkdemo"
                     android:onClick="go_NetworkDemo"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shareAction"
+                    android:id="@+id/btn_shareAction"
+                    android:onClick="go_ShareAction"/>
             </GridLayout>
         </LinearLayout>
     </ScrollView>
